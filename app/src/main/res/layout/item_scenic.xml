@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fScenic_s1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:background="@drawable/raidous_background_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:id="@+id/item_Scenic_img"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/chishuihe"/>
+
+        <TextView
+            android:id="@+id/item_Scenic_title"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_Scenic_img"
+            android:text="景区标题"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/item_Scenic_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minLines="2"
+            android:layout_toRightOf="@id/item_Scenic_img"
+            android:layout_below="@id/item_Scenic_title"
+            android:text="这里是景区简介哦"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

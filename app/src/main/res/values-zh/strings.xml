@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">点个赞旅游App</string>
+    <string name="fuguguanjia">服务管家</string>
+    <string name="test_setting">设置</string>
+    <string name="splash">闪屏页面</string>
+    <string name="guide">引导</string>
+</resources>

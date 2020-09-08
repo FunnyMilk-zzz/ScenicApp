@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/raidous_background_gray">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black"
+        android:text="请选择预定项目的时间"/>
+
+    <DatePicker
+        android:theme="@style/AppTheme"
+        android:id="@+id/dialog_pay_service_dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_pay_service_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="业务：XXX"
+            android:textColor="#FF7146"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_pay_service_price"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/dialog_pay_service_duty"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FF7146"
+            android:textSize="23sp"
+            android:text="￥XXX/天"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialog_pay_service_submit"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textColor="@color/colorAccent"
+            android:text="确认支付"/>
+
+        <TextView
+            android:id="@+id/dialog_pay_service_cancel"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textColor="@color/colorAccent"
+            android:text="取消支付"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

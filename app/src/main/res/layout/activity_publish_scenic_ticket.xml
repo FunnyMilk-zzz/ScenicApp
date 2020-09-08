@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F0F0F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="发布门票信息"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/apublish_scenic_ticket_scenicId"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="景区Id"/>
+
+            <EditText
+                android:id="@+id/apublish_scenic_ticketName"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="门票名"/>
+
+
+            <EditText
+                android:id="@+id/apublish_scenic_ticket_itemA"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="项目A"/>
+
+            <EditText
+                android:id="@+id/apublish_scenic_ticket_aPrice"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_radio_white"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="项目A价格"/>
+
+            <EditText
+                android:id="@+id/apublish_scenic_ticket_itemB"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="项目B"/>
+
+            <EditText
+                android:id="@+id/apublish_scenic_ticket_bPrice"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLines="2"
+                android:inputType="number"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="项目B价格"/>
+
+
+
+            <Button
+                android:id="@+id/apublish_scenic_ticket_btn_submit"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:background="@drawable/botton_submit"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

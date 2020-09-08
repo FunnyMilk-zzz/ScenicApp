@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zlf.newtest">
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!--推送所需的权限-->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <!-- 读取外置存储。如果开发者使用了so动态加载功能并且把so文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_agree"
+        android:label="@string/application_lable"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label">
+
+        <!--百度地图服务-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Q3rliwLuy9CXRrfbX3tmGc6rNIVKXqzP" />
+        <!--百度定位服务-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!--百度导航服务-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.zlf.newtest.BmobContentProvider"></provider>
+
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <!--支持-->
+        <activity
+            android:name=".ui.SupportActivity"
+            android:label="支持"></activity>
+        <!--闪屏页面-->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/NoActivityFullScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <!--引导页面-->
+        <activity
+            android:name=".ui.GuideActivity"
+            android:label="@string/guide"
+            android:theme="@style/NoActivityFullScreen"></activity>
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="用户登录"></activity>
+
+        <activity
+            android:name=".ui.RegisteredActivity"
+            android:label="用户注册"></activity>
+
+        <activity
+            android:name=".ui.ForgetPasswordActivity"
+            android:label="忘记密码"></activity>
+
+        <activity
+            android:name=".ui.ChangePassword"
+            android:label="修改密码"></activity>
+
+        <activity
+            android:name=".ui.adminUI.LoginActivity_ScenicAdmin"
+            android:label="景区管理员登陆">
+
+        </activity>
+
+        <activity
+            android:name=".ui.adminUI.RegisteredActivity_ScenicAdmin"
+            android:label="景区管理员注册"/>
+
+        <activity
+            android:name=".ui.adminUI.PublishMessageActivity"
+            android:label="发布旅游资讯"/>
+
+        <activity
+            android:name=".ui.adminUI.PublishScenicActivity"
+            android:label="发布景区">
+
+        </activity>
+
+        <activity
+            android:name=".ui.adminUI.PublishGuideActivity"
+            android:label="发布导游信息"/>
+
+        <activity android:name=".ui.adminUI.PublishSerivceActivity"
+            android:label="发布景区服务"/>
+
+        <activity
+            android:name=".ui.adminUI.LoginActivity_SystemAdmin"
+            android:label="系统管理员登录">
+
+        </activity>
+
+        <!--资讯详情-->
+        <activity android:name=".DetailActivity.MessageDetail"></activity>
+        <!--景区详情-->
+        <activity android:name=".DetailActivity.ScienicDetail">
+
+        </activity>
+
+        <activity
+            android:name=".DetailActivity.GuideDetail"
+            android:label="导游详情"></activity>
+
+        <activity
+            android:name=".ScenicMainActivity"
+            android:label="景区管理程序"></activity>
+        <activity
+            android:name=".SystemMainActivity"
+            android:label="平台系统管理程序"></activity>
+
+        <!--浮动activity 支付-->
+        <activity
+            android:name=".DetailActivity.Pay.PayGuide"
+            android:theme="@style/Theme_dialog"/>
+
+
+
+        <!--门票支付浮动窗口-->
+        <activity
+            android:name=".DetailActivity.Pay.PayTicket"
+            android:theme="@style/Theme_dialog" />
+        <!--游玩服务支付浮动窗口-->
+        <activity android:name=".DetailActivity.Pay.PayService"
+            android:theme="@style/Theme_dialog"/>
+
+        <!--我的位置-->
+        <activity
+            android:name=".ui.LocationGpsActivity"
+            android:label="景区导览"></activity>
+
+        <!--发布门票信息-->
+        <activity
+            android:name=".ui.adminUI.PublishScenicTicket"
+            android:label="发布门票信息" />
+
+        <!--用户查看订单信息-->
+        <activity
+            android:name=".ui.UserOrderActivity"
+            android:label="我的订单" />
+
+        <!--提交反馈信息-->
+        <activity
+            android:name=".ui.SubmitFeedback"
+            android:label="提交反馈信息" />
+    </application>
+
+
+</manifest>

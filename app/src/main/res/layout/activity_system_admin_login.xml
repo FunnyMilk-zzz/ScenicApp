@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="35dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/b_setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="系统管理员登录"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/system_admin_et_name"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:background="@drawable/edittext_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="用户名"/>
+
+    <EditText
+        android:id="@+id/system_admin_et_password"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="密码"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/system_admin_keep_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="记住密码"
+            android:textColor="@color/base_color"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/system_admin_btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botton_submit"
+            android:text="登录"
+            android:textColor="#000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/system_admin_tv_forget"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="忘记密码"
+                android:textColor="@color/base_color"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

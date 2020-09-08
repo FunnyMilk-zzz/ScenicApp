@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F0F0F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提交反馈信息"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <EditText
+                android:id="@+id/ac_submitFeedback_tx_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLines="2"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="标题"/>
+
+            <EditText
+                android:id="@+id/ac_submitFeedback_tx_body"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="15"
+                android:background="@drawable/edittext_radio_white"
+                android:gravity="top|left"
+                android:hint="内容"/>
+
+            <Button
+                android:id="@+id/ac_submitFeedback_btn_submit"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:background="@drawable/botton_submit"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:id="@+id/item_Guide_detail_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="导游名"/>
+
+
+    <ImageView
+        android:id="@+id/item_Guide_detail_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/daoyou"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/item_Guide_detail_tv_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF7146"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="业务熟练 熟悉路线"/>
+
+    <TextView
+        android:id="@+id/item_Guide_detail_tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="所在城市："
+        android:lines="1"/>
+    <TextView
+        android:id="@+id/item_Guide_detail_tv_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="年龄："
+        android:lines="1"/>
+    <TextView
+        android:id="@+id/item_Guide_detail_tv_worktime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带团时间"
+        android:lines="1"/>
+    <TextView
+        android:id="@+id/item_Guide_detail_tv_hobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的专长"
+        android:lines="1"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_Guide_detail_tv_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:text="业务：XXX"/>
+
+        <TextView
+            android:id="@+id/item_Guide_detail_tv_price"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/item_Guide_detail_tv_duty"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FF7146"
+            android:textSize="23sp"
+            android:text="￥XXX/天"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F0F0F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="发布景区服务信息"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/ac_publish_service_scenicId"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="景区Id"/>
+
+            <EditText
+                android:id="@+id/ac_publish_service_messageId"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="对应的资讯Id"/>
+
+            <EditText
+                android:id="@+id/ac_publish_service_title"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="服务标题"/>
+
+
+            <EditText
+                android:id="@+id/ac_publish_service_itemName"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_radio_white"
+                android:hint="项目名"/>
+
+            <EditText
+                android:id="@+id/ac_publish_service_price"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_radio_white"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="项目价格"/>
+
+            <Button
+                android:id="@+id/ac_publish_service_btn_submit"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:background="@drawable/botton_submit"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
